@@ -93,16 +93,16 @@ printf ("\n O Primeiro lugar recebeu: %f, \n O Segundo lugar recebeu: %f, \n O T
 
 //(URI 1019) Leia um valor inteiro, que é o tempo de duração em segundos de um determinado evento em uma fábrica, e informe-o expresso no formato horas:minutos:segundos.
 
-//int segundos, horas, minutos;
+int n, segundos, horas, minutos;
 
-//printf ("\n Digite tempo de duracao em segundos do evento na fabrica: ");
-//scanf ("\n %d", &segundos);
+printf ("\n Digite tempo de duracao em segundos do evento na fabrica: ");
+scanf ("\n %d", &n);
 
-//minutos = segundos / 60;
+horas = n / 3600;
+minutos = (n % 3600) / 60;
+segundos = n % 60;
 
-//horas = minutos % 60;
-
-//printf ("\n O evento durou: %d:%d:%d", horas, minutos, segundos);
+printf ("\n O evento durou: %d:%d:%d", horas, minutos, segundos);
 
 //9) Joaozinho quer calcular e mostrar a quantidade de litros de combustível gastos em uma 
 //viagem, ao utilizar um automóvel que faz 12 KM/L. Para isso, ele gostaria que você o auxiliasse através 
@@ -124,20 +124,20 @@ printf ("\n A distancia total foi: %.3f", distancia_total);
 gasolina = distancia_total / 12; 
 printf ("\n Vao ser necessarios ser gastos %.3f litros de gasolina", gasolina);
 
-//(URI 1013) Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da mensagem “eh o maior”. Utilize a fórmula:
+//10) (URI 1013) Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da mensagem “eh o maior”. Utilize a fórmula:
 
-int n1, n2, n3;
+int a, b, c, d, maior, maior_temp1, maior_temp2;
 
-printf ("\n Digite o primeiro valor: ");
-scanf ("%d", &n1);
+printf ("\n Digite os valores: ");
+scanf ("\n %d %d %d %d", &a, &b, &c, &d);
 
-printf ("\n Digite o segundo valor: ");
-scanf ("%d", &n2);
+maior_temp1 = (a+b+abs(a-b))/2;
 
-printf ("\n Digite o terceiro valor: ");
-scanf ("%d", &n3);
+maior_temp2 = (maior_temp1+c+abs(maior_temp1-c))/2;
 
+maior = (maior_temp2+d+abs(maior_temp2-d))/2;
 
+printf ("\n O maior entre |%d|%d|%d|%d| = %d", a, b, c, d,  maior);
 
 	return 0;
 }
