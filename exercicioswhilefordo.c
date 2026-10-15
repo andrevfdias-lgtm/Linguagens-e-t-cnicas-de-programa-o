@@ -29,11 +29,30 @@ int main(int argc, char *argv[]) {
 	ex: 1,8,2 >> contar de 1 a 8, com passo 2 = 3,5,7.*/
 	
 	
-	/*EXERCICIO2: FaÁa um programa que receba um numero n e realize a soma dos
+	int ini, fim, passo;
+	
+	printf ("Insira valor inicial, final e passo: ");
+	scanf ("%d %d %d", &ini, &fim, &passo);
+	if (ini<fim){
+		while (ini<fim){
+			printf ("|%d|", ini);
+			ini += passo;
+		}
+		
+	}else{
+		while (ini>fim){
+			printf ("|%d|", ini);
+			ini -= passo;
+		
+		}
+	}
+	
+	
+	/*EXERCICIO2: Fa√ßa um programa que receba um numero n e realize a soma dos
 	n primeiros termos de sequencia definida
 	[S = 1/2; 1/4; 1/8; 1/16...N] */
 	
-	/*EXERCICIO3: Crie um programa que exiba na tela, o tri‚ngulo de pascal */
+	/*EXERCICIO3: Crie um programa que exiba na tela, o tri√¢ngulo de pascal */
 	
 	return 0;
 }
