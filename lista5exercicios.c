@@ -1,6 +1,8 @@
-
 #include <stdio.h>
 #include <stdlib.h>
+
+/* Implemente um programa que leia um número n [com n positivo & n <= 64] e mostre na tela o seu
+valor em base binária (bits) */
 
 int main(int argc, char *argv[]) {
     int n, aux, mult = 1;
